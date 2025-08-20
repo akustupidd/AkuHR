@@ -1,4 +1,4 @@
-# **AkuHR 🦍** [![LGPL License](https://img.shields.io/badge/license-LGPL-green.svg)](https://www.gnu.org/licenses/lgpl-3.0)  [![Docker](https://img.shields.io/badge/Docker-AkuHR-blue?logo=docker)](https://hub.docker.com/r/AkuHR/AkuHR)
+# **Horilla 🦍** [![LGPL License](https://img.shields.io/badge/license-LGPL-green.svg)](https://www.gnu.org/licenses/lgpl-3.0)  [![Docker](https://img.shields.io/badge/Docker-AkuHR-blue?logo=docker)](https://hub.docker.com/r/AkuHR/AkuHR)
 
 **AkuHR** is a Free and Open Source HRMS (Human Resource Management System) Software designed to streamline HR processes and enhance organizational efficiency.
 
