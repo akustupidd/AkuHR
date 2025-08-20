@@ -1,14 +1,14 @@
-# **Horilla 🦍** [![LGPL License](https://img.shields.io/badge/license-LGPL-green.svg)](https://www.gnu.org/licenses/lgpl-3.0)  [![Docker](https://img.shields.io/badge/Docker-Horilla-blue?logo=docker)](https://hub.docker.com/r/horilla/horilla)
+# **AkuHR 🦍** [![LGPL License](https://img.shields.io/badge/license-LGPL-green.svg)](https://www.gnu.org/licenses/lgpl-3.0)  [![Docker](https://img.shields.io/badge/Docker-AkuHR-blue?logo=docker)](https://hub.docker.com/r/AkuHR/AkuHR)
 
-**Horilla** is a Free and Open Source HRMS (Human Resource Management System) Software designed to streamline HR processes and enhance organizational efficiency.
+**AkuHR** is a Free and Open Source HRMS (Human Resource Management System) Software designed to streamline HR processes and enhance organizational efficiency.
 
-![Horilla Screenshot](https://github.com/horilla-opensource/horilla/assets/131998600/1317bd0a-03a8-40be-8fb2-ecb655bb5c13)
+![AkuHR Screenshot](https://github.com/AkuHR-opensource/AkuHR/assets/131998600/1317bd0a-03a8-40be-8fb2-ecb655bb5c13)
 
 ---
 
 ## **Installation**
 
-Horilla can be installed on your system by following the steps below. Ensure you have **Python**, **Django**, and a **database** (preferably PostgreSQL) installed as prerequisites.
+AkuHR can be installed on your system by following the steps below. Ensure you have **Python**, **Django**, and a **database** (preferably PostgreSQL) installed as prerequisites.
 
 ---
 
@@ -83,8 +83,8 @@ Horilla can be installed on your system by following the steps below. Ensure you
      ```
    - Create a new role and database:
      ```sql
-     CREATE ROLE horilla LOGIN PASSWORD 'horilla';
-     CREATE DATABASE horilla_main OWNER horilla;
+     CREATE ROLE AkuHR LOGIN PASSWORD 'AkuHR';
+     CREATE DATABASE AkuHR_main OWNER AkuHR;
      \q
      ```
    - Exit the `postgres` user:
@@ -113,8 +113,8 @@ Horilla can be installed on your system by following the steps below. Ensure you
      ```
    - Create a new role and database:
      ```sql
-     CREATE ROLE horilla LOGIN PASSWORD 'horilla';
-     CREATE DATABASE horilla_main OWNER horilla;
+     CREATE ROLE AkuHR LOGIN PASSWORD 'AkuHR';
+     CREATE DATABASE AkuHR_main OWNER AkuHR;
      \q
      ```
 
@@ -139,16 +139,16 @@ Horilla can be installed on your system by following the steps below. Ensure you
 4. **Configure PostgreSQL Database and User**:
    - Create a database and user:
      ```bash
-     createdb horilla_main
-     createuser horilla
-     psql -c "ALTER USER horilla WITH PASSWORD 'horilla';"
+     createdb AkuHR_main
+     createuser AkuHR
+     psql -c "ALTER USER AkuHR WITH PASSWORD 'AkuHR';"
      ```
 
 ---
 
-## **Install Horilla**
+## **Install AkuHR**
 
-Follow the steps below to install **Horilla** on your system. Horilla is compatible with **Ubuntu**, **Windows**, and **macOS**.
+Follow the steps below to install **AkuHR** on your system. AkuHR is compatible with **Ubuntu**, **Windows**, and **macOS**.
 
 ---
 
@@ -157,22 +157,22 @@ Follow the steps below to install **Horilla** on your system. Horilla is compati
 #### **Ubuntu**
 ```bash
 sudo git init
-sudo git remote add horilla https://horilla-opensource@github.com/horilla-opensource/horilla.git
-sudo git pull horilla master
+sudo git remote add AkuHR https://AkuHR-opensource@github.com/AkuHR-opensource/AkuHR.git
+sudo git pull AkuHR master
 ```
 
 #### **Windows**
 ```powershell
 git init
-git remote add horilla https://horilla-opensource@github.com/horilla-opensource/horilla.git
-git pull horilla master
+git remote add AkuHR https://AkuHR-opensource@github.com/AkuHR-opensource/AkuHR.git
+git pull AkuHR master
 ```
 
 #### **macOS**
 ```bash
 git init
-git remote add horilla https://horilla-opensource@github.com/horilla-opensource/horilla.git
-git pull horilla master
+git remote add AkuHR https://AkuHR-opensource@github.com/AkuHR-opensource/AkuHR.git
+git pull AkuHR master
 ```
 
 ### **2. Set Up Python Virtual Environment**
@@ -184,8 +184,8 @@ git pull horilla master
    ```
 2. Create and activate the virtual environment:
    ```bash
-   python3 -m venv horillavenv
-   source horillavenv/bin/activate
+   python3 -m venv AkuHRvenv
+   source AkuHRvenv/bin/activate
    ```
 3. Install dependencies:
    ```bash
@@ -195,8 +195,8 @@ git pull horilla master
 #### **Windows**
 1. Create and activate the virtual environment:
    ```powershell
-   python -m venv horillavenv
-   .\horillavenv\Scripts\activate
+   python -m venv AkuHRvenv
+   .\AkuHRvenv\Scripts\activate
    ```
 2. Install dependencies:
    ```powershell
@@ -206,8 +206,8 @@ git pull horilla master
 #### **macOS**
 1. Create and activate the virtual environment:
    ```bash
-   python3 -m venv horillavenv
-   source horillavenv/bin/activate
+   python3 -m venv AkuHRvenv
+   source AkuHRvenv/bin/activate
    ```
 2. Install dependencies:
    ```bash
@@ -230,9 +230,9 @@ git pull horilla master
    ALLOWED_HOSTS=www.example.com,example.com,*
    DB_INIT_PASSWORD=d3f6a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d
    DB_ENGINE=django.db.backends.postgresql
-   DB_NAME=horilla_main
-   DB_USER=horilla
-   DB_PASSWORD=horilla
+   DB_NAME=AkuHR_main
+   DB_USER=AkuHR
+   DB_PASSWORD=AkuHR
    DB_HOST=localhost
    DB_PORT=5432
    ```
@@ -290,19 +290,19 @@ python manage.py runserver
 
 ---
 
-### **Accessing Horilla**
+### **Accessing AkuHR**
 
-If everything is configured correctly, you should be able to access your Horilla app at **http://localhost:8000**.
-![Initialize Database in Horilla HRMS](https://www.horilla.com/wp-content/uploads/2024/12/how-to-initialize-the-database-in-horilla-hrms-step-by-step-1-1024x576.png)
+If everything is configured correctly, you should be able to access your AkuHR app at **http://localhost:8000**.
+![Initialize Database in AkuHR HRMS](https://www.AkuHR.com/wp-content/uploads/2024/12/how-to-initialize-the-database-in-AkuHR-hrms-step-by-step-1-1024x576.png)
 
 
 #### **Initial Setup**
 From the login page, you will have two options:
-1. **Initialize Database**: Use this option to initialize the Horilla database by creating a super admin, headquarter company, department, and job position. Authenticate using the `DB_INIT_PASSWORD` specified in the `.env` file.
+1. **Initialize Database**: Use this option to initialize the AkuHR database by creating a super admin, headquarter company, department, and job position. Authenticate using the `DB_INIT_PASSWORD` specified in the `.env` file.
 2. **Load Demo Data**: Use this option if you want to work with demo data. Authenticate using the `DB_INIT_PASSWORD` specified in the `.env` file.
 
 #### **Running on a Custom Port**
-If you wish to run the Horilla application on a different port, specify the port number after the `runserver` command. For example:
+If you wish to run the AkuHR application on a different port, specify the port number after the `runserver` command. For example:
 ```bash
 python3 manage.py runserver 8080  # For Ubuntu/macOS
 python manage.py runserver 8080   # For Windows
@@ -375,8 +375,8 @@ python manage.py runserver 8080   # For Windows
 
 ## **About**
 
-[Horilla](https://www.horilla.com/) is an open-source HRMS solution designed to simplify HR operations and improve organizational efficiency.
+[AkuHR](https://www.AkuHR.com/) is an open-source HRMS solution designed to simplify HR operations and improve organizational efficiency.
 
 ---
 
-This README provides a comprehensive guide to installing and setting up Horilla on various platforms. If you encounter any issues, feel free to reach out to the Horilla community for support. Happy coding! 🚀
+This README provides a comprehensive guide to installing and setting up AkuHR on various platforms. If you encounter any issues, feel free to reach out to the AkuHR community for support. Happy coding! 🚀
